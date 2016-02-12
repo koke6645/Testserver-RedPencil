@@ -140,7 +140,7 @@
                                         </constraints>
                                         <color key="textColor" red="0.25244391030000002" green="0.25244391030000002" blue="0.25244391030000002" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="NotoSans" family="Noto Sans" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="esz-N6-SHm" customClass="CustomButton" customModule="Testserver_RedPencil" customModuleProvider="target">
                                         <rect key="frame" x="204" y="175" width="153" height="33"/>
@@ -153,6 +153,9 @@
                                         <state key="normal" title="Login / Signup">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="attemptLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QV3-Sp-rbA"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -193,10 +196,33 @@
                             <constraint firstItem="iVK-jC-K1i" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="fqK-7R-dpr"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emailField" destination="fap-pV-t92" id="WrL-qP-QMz"/>
+                        <outlet property="passwordField" destination="Yiw-xU-2LV" id="kJh-SQ-asx"/>
+                        <segue destination="xqG-b2-pB1" kind="show" identifier="loggedIn" id="3sa-Dc-wcF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="645" y="523"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="2xZ-mP-99i">
+            <objects>
+                <viewController id="xqG-b2-pB1" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="AMk-xE-JSh"/>
+                        <viewControllerLayoutGuide type="bottom" id="DfA-Hm-ixo"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="sNd-aL-78H">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.50449874760000002" green="0.78136012099999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="I81-m7-XNN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1467" y="523"/>
         </scene>
     </scenes>
     <resources>

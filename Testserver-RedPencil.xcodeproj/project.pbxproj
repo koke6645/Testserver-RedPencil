@@ -11,6 +11,9 @@
 		8B9DEF391C6D57430097EA87 /* LoginAndSignupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9DEF381C6D57430097EA87 /* LoginAndSignupVC.swift */; };
 		8B9DEF3A1C6D57430097EA87 /* LoginAndSignupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9DEF381C6D57430097EA87 /* LoginAndSignupVC.swift */; };
 		8B9DEF3B1C6D57430097EA87 /* LoginAndSignupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9DEF381C6D57430097EA87 /* LoginAndSignupVC.swift */; };
+		8B9DEF3E1C6D733C0097EA87 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9DEF3D1C6D733C0097EA87 /* DataService.swift */; };
+		8B9DEF3F1C6D733C0097EA87 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9DEF3D1C6D733C0097EA87 /* DataService.swift */; };
+		8B9DEF401C6D733C0097EA87 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9DEF3D1C6D733C0097EA87 /* DataService.swift */; };
 		8BA104491C6D21FA006F68D2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA104481C6D21FA006F68D2 /* AppDelegate.swift */; };
 		8BA1044B1C6D21FA006F68D2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA1044A1C6D21FA006F68D2 /* ViewController.swift */; };
 		8BA1044E1C6D21FA006F68D2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BA1044C1C6D21FA006F68D2 /* Main.storyboard */; };
@@ -81,6 +84,7 @@
 		6BD0619361DED4767A34BF0D /* Pods-Testserver-RedPencilUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Testserver-RedPencilUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Testserver-RedPencilUITests/Pods-Testserver-RedPencilUITests.release.xcconfig"; sourceTree = "<group>"; };
 		7106F339EED7CAE73709041C /* Pods-Testserver-RedPencilUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Testserver-RedPencilUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Testserver-RedPencilUITests/Pods-Testserver-RedPencilUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		8B9DEF381C6D57430097EA87 /* LoginAndSignupVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginAndSignupVC.swift; sourceTree = "<group>"; };
+		8B9DEF3D1C6D733C0097EA87 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		8BA104451C6D21FA006F68D2 /* Testserver-RedPencil.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Testserver-RedPencil.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BA104481C6D21FA006F68D2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8BA1044A1C6D21FA006F68D2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -169,6 +173,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		8B9DEF3C1C6D73090097EA87 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				8B9DEF3D1C6D733C0097EA87 /* DataService.swift */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
 		8BA1043C1C6D21FA006F68D2 = {
 			isa = PBXGroup;
 			children = (
@@ -195,6 +207,7 @@
 			isa = PBXGroup;
 			children = (
 				8BA8ED741C6D4C160021C761 /* Frameworks */,
+				8B9DEF3C1C6D73090097EA87 /* Services */,
 				8BA1048E1C6D303D006F68D2 /* Util */,
 				8BA104791C6D2248006F68D2 /* Resources */,
 				8BA104781C6D223E006F68D2 /* Controller */,
@@ -563,6 +576,7 @@
 				8B9DEF391C6D57430097EA87 /* LoginAndSignupVC.swift in Sources */,
 				8BA104901C6D3066006F68D2 /* Constants.swift in Sources */,
 				8BA104941C6D351C006F68D2 /* CustomButton.swift in Sources */,
+				8B9DEF3E1C6D733C0097EA87 /* DataService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -571,6 +585,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8B9DEF3A1C6D57430097EA87 /* LoginAndSignupVC.swift in Sources */,
+				8B9DEF3F1C6D733C0097EA87 /* DataService.swift in Sources */,
 				8BA104991C6D3547006F68D2 /* CustomView.swift in Sources */,
 				8BA104951C6D351C006F68D2 /* CustomButton.swift in Sources */,
 				8BA1045E1C6D21FA006F68D2 /* Testserver_RedPencilTests.swift in Sources */,
@@ -584,6 +599,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8B9DEF3B1C6D57430097EA87 /* LoginAndSignupVC.swift in Sources */,
+				8B9DEF401C6D733C0097EA87 /* DataService.swift in Sources */,
 				8BA1049A1C6D3547006F68D2 /* CustomView.swift in Sources */,
 				8BA104961C6D351C006F68D2 /* CustomButton.swift in Sources */,
 				8BA104691C6D21FA006F68D2 /* Testserver_RedPencilUITests.swift in Sources */,
